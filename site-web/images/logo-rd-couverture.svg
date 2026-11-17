@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 136" role="img" aria-label="RD Couverture">
+  <!-- Toits (d'après le logo du véhicule) -->
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <rect x="52" y="14" width="13" height="26" fill="#3DA5EE"/>
+    <path d="M14 66 L102 8 L190 66" stroke="#3DA5EE" stroke-width="11"/>
+    <path d="M38 68 L102 26 L166 68" stroke="#1F2C7A" stroke-width="6"/>
+    <path d="M150 58 L208 20 L270 62" stroke="#3DA5EE" stroke-width="10"/>
+    <path d="M168 62 L208 36 L248 62" stroke="#1F2C7A" stroke-width="5"/>
+  </g>
+  <g fill="#1F2C7A">
+    <rect x="90" y="42" width="10" height="10"/><rect x="103" y="42" width="10" height="10"/>
+    <rect x="90" y="55" width="10" height="10"/><rect x="103" y="55" width="10" height="10"/>
+    <rect x="200" y="44" width="7" height="7"/><rect x="209" y="44" width="7" height="7"/>
+    <rect x="200" y="53" width="7" height="7"/><rect x="209" y="53" width="7" height="7"/>
+    <rect x="58" y="72" width="256" height="6"/>
+  </g>
+  <!-- RD -->
+  <g font-family="'Arial Black', 'Arial', 'Helvetica Neue', Helvetica, sans-serif" font-weight="900" fill="#1F2C7A" stroke="#fff" stroke-width="2.5" paint-order="stroke">
+    <text x="2" y="122" font-size="62">R</text>
+    <text x="40" y="132" font-size="62">D</text>
+  </g>
+  <text x="90" y="116" font-family="'Arial Black', 'Arial', 'Helvetica Neue', Helvetica, sans-serif" font-weight="900" font-size="33" fill="#1F2C7A" textLength="226" lengthAdjust="spacingAndGlyphs">COUVERTURE</text>
+</svg>

@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>RD Couverture - Couvreur à Saint-Lô | Toiture, Ardoise, Zinguerie</title>
-<meta name="description" content="RD Couverture, entreprise familiale de couverture à Saint-Lô et dans la Manche depuis 25 ans : rénovation de toiture en ardoise et tuiles, réparation de fuites, zinguerie et gouttières. Devis gratuit."/>
+<title>RD Couverture - Couvreur à Saint-Lô | Toiture, Zinguerie, Démoussage, Façade</title>
+<meta name="description" content="RD Couverture, entreprise familiale à Saint-Lô depuis 25 ans : couverture, recherche de fuite, zinguerie, démoussage et hydrofuge, nettoyage de façade et peinture. Déplacement et devis gratuits."/>
 <link href="css/style.css" rel="stylesheet"/>
+<link href="images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"/>
@@ -20,57 +21,51 @@
   .slider-overlay { position: absolute; top: 0; left: 0; bottom: 0; width: 50%; overflow: hidden; }
   .slider-overlay > * { position: absolute; top: 0; left: 0; height: 100%; max-width: none; pointer-events: none; }
   .slider-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; transform: translateX(-50%); pointer-events: none; }
-  .slider-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 32px; height: 32px; border-radius: 9999px; background: #D62828; border: 2px solid #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; color: #fff; }
+  .slider-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 32px; height: 32px; border-radius: 9999px; background: #1E6FD6; border: 2px solid #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; color: #fff; }
   .ph { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: .5rem; text-align: center; font-size: .85rem; font-weight: 600; }
   .ph-before { background: repeating-linear-gradient(135deg, #5B6470 0 14px, #535C67 14px 28px); color: #E2E8F0; }
   .ph-after { background: repeating-linear-gradient(135deg, #3A4756 0 14px, #34404E 14px 28px); color: #fff; }
 
   /* Fenêtre de devis */
-  .devis-opt { background: #fff; color: #1B232C; font-size: 1rem; padding: 1.15rem .5rem; transition: background-color .15s, color .15s; }
-  .devis-opt:hover { background: #FDECEC; }
-  .devis-opt[aria-pressed="true"] { background: #D62828; color: #fff; font-weight: 600; }
-  .devis-opt:focus-visible, .devis-btn:focus-visible { outline: 3px solid #26313D; outline-offset: -3px; }
-  .devis-input { width: 100%; border: 0; background: #fff; padding: 1.05rem 1.1rem; font-size: 1rem; color: #1B232C; }
+  .devis-opt { background: #fff; color: #151D4A; font-size: 1rem; padding: 1.15rem .5rem; transition: background-color .15s, color .15s; }
+  .devis-opt:hover { background: #E8F1FC; }
+  .devis-opt[aria-pressed="true"] { background: #1E6FD6; color: #fff; font-weight: 600; }
+  .devis-opt:focus-visible, .devis-btn:focus-visible { outline: 3px solid #1F2C7A; outline-offset: -3px; }
+  .devis-input { width: 100%; border: 0; background: #fff; padding: 1.05rem 1.1rem; font-size: 1rem; color: #151D4A; }
   .devis-input::placeholder { color: #6B7280; }
-  .devis-input:focus { outline: none; box-shadow: inset 0 0 0 2px #D62828; }
+  .devis-input:focus { outline: none; box-shadow: inset 0 0 0 2px #1E6FD6; }
   .devis-input[aria-invalid="true"] { box-shadow: inset 0 0 0 2px #DC2626; background: #FEF2F2; }
   #devis-modal.is-open { display: flex; }
   #mobile-menu.is-open { display: block; }
 
   /* Bandeau cookies */
-  .cookie-banner { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 90; max-width: 560px; margin: 0 auto; background: #fff; color: #1B232C; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.25); padding: 16px 18px; font-size: .9rem; line-height: 1.45; }
+  .cookie-banner { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 90; max-width: 560px; margin: 0 auto; background: #fff; color: #151D4A; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.25); padding: 16px 18px; font-size: .9rem; line-height: 1.45; }
   .cookie-banner[hidden] { display: none; }
   .cookie-actions { display: flex; gap: 10px; margin-top: 12px; }
-  .cookie-actions button { flex: 1; padding: 10px; font-weight: 600; border-radius: 4px; background: #26313D; color: #fff; }
-  .cookie-actions button:hover { background: #1B232C; }
+  .cookie-actions button { flex: 1; padding: 10px; font-weight: 600; border-radius: 4px; background: #1F2C7A; color: #fff; }
+  .cookie-actions button:hover { background: #151D4A; }
   /* Note Google et avis */
   .stars { color: #F5B301; letter-spacing: .08em; }
-  .rating-badge { display: inline-flex; align-items: center; gap: .6rem; background: #fff; border: 1px solid #E2E8F0; border-radius: 9999px; padding: .45rem 1rem; font-size: .9rem; color: #1B232C; box-shadow: 0 1px 2px rgba(0,0,0,.05); text-decoration: none; }
-  .rating-badge:hover { border-color: #D62828; }
-  .review { background: #fff; border-radius: 8px; border-top: 4px solid #D62828; padding: 1.5rem; margin: 0; display: flex; flex-direction: column; gap: .75rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .rating-badge { display: inline-flex; align-items: center; gap: .6rem; background: #fff; border: 1px solid #E2E8F0; border-radius: 9999px; padding: .45rem 1rem; font-size: .9rem; color: #151D4A; box-shadow: 0 1px 2px rgba(0,0,0,.05); text-decoration: none; }
+  .rating-badge:hover { border-color: #1E6FD6; }
+  .review { background: #fff; border-radius: 8px; border-top: 4px solid #1E6FD6; padding: 1.5rem; margin: 0; display: flex; flex-direction: column; gap: .75rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
   .review p { color: #334155; font-size: .95rem; line-height: 1.6; margin: 0; flex: 1; }
-  .review footer { font-size: .85rem; font-weight: 600; color: #26313D; }
+  .review footer { font-size: .85rem; font-weight: 600; color: #1F2C7A; }
   .aspect-\[4\/3\] { aspect-ratio: 4 / 3; }
+  .selection\:bg-brand-red ::selection, .selection\:bg-brand-red::selection { background: #1E6FD6; color: #fff; }
+  .hover\:text-brand-light:hover { color: #F1F6FC; }
+  .logo-img { height: 56px; width: auto; }
+  .logo-card { background: #fff; border-radius: 10px; padding: 10px 16px; display: inline-block; }
   @media (min-width: 768px) { .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 </style>
 </head>
-<body class="bg-white text-slate-800 antialiased selection:bg-red-600 selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-red selection:text-white">
 
 <!-- ================= EN-TÊTE ================= -->
 <header class="w-full bg-white border-b border-slate-100 sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-    <!-- Logo provisoire (à remplacer par le logo de RD Couverture) -->
-    <a aria-label="RD Couverture, accueil" class="flex items-center gap-3 shrink-0" href="#">
-      <svg class="w-11 h-11" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <rect width="48" height="48" rx="6" fill="#26313D"/>
-        <path d="M7 26 L24 11 L41 26" stroke="#D62828" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13 25 V37 H35 V25" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/>
-        <rect x="31" y="12" width="5" height="9" fill="#fff"/>
-      </svg>
-      <span class="flex flex-col leading-none">
-        <span class="font-condensed text-2xl font-bold text-brand-slate tracking-tight">RD</span>
-        <span class="font-condensed text-xs font-bold text-brand-red tracking-[0.3em] mt-0.5">Couverture</span>
-      </span>
+    <a aria-label="RD Couverture, accueil" class="flex items-center shrink-0" href="#">
+      <img alt="RD Couverture" class="logo-img" height="56" width="132" src="images/logo-rd-couverture.svg"/>
     </a>
 
     <nav class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-slate-700">
@@ -108,12 +103,12 @@
 <section class="relative bg-gradient-to-b from-brand-light to-white py-14 md:py-20 overflow-hidden border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
     <div class="lg:col-span-6">
-      <p class="font-condensed text-sm font-semibold tracking-[0.2em] text-brand-red mb-3">Couvreur · Zingueur · Saint-Lô</p>
+      <p class="font-condensed text-sm font-semibold tracking-[0.2em] text-brand-red mb-3">Couverture · Zinguerie · Peinture</p>
       <h1 class="font-condensed text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-brand-slate leading-[1.08] mb-5">
         Toiture et couverture <span class="text-brand-red">à Saint-Lô</span>
       </h1>
       <p class="text-lg text-slate-600 leading-relaxed mb-6 max-w-xl">
-        Entreprise familiale, 25 ans d'expérience. Rénovation de toiture en ardoise et en tuiles, réparation de fuites, zinguerie et gouttières à Saint-Lô et dans les alentours.
+        Entreprise familiale, 25 ans d'expérience. Réparation et rénovation de toiture, zinguerie, démoussage et nettoyage de façade à Saint-Lô et dans les alentours. Déplacement et devis gratuits.
       </p>
       <a class="rating-badge mb-8" href="#avis">
         <span class="stars" aria-hidden="true">★★★★★</span>
@@ -127,9 +122,8 @@
       </div>
     </div>
     <div class="lg:col-span-6 flex justify-center lg:justify-end">
-      <!-- VISUEL PRINCIPAL : remplacer ce bloc par <img src="images/hero.jpg" alt="..." class="w-full h-auto rounded-lg"/> (camion, équipe ou beau chantier) -->
       <figure class="relative w-full max-w-[680px] drop-shadow-xl">
-        <div class="ph ph-after w-full aspect-[4/3] rounded-lg"><i class="w-8 h-8" data-lucide="image"></i>Photo principale (camion, équipe ou chantier)</div>
+        <img alt="Utilitaire RD Couverture, couverture, zinguerie et peinture" class="w-full h-auto rounded-lg" height="900" width="1200" src="images/camion-rd.jpg"/>
       </figure>
     </div>
   </div>
@@ -140,36 +134,35 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-12">
       <h2 class="font-condensed text-3xl sm:text-4xl md:text-5xl font-bold text-brand-slate mb-4">Tout ce qui se passe <span class="text-brand-red">au-dessus de votre tête</span></h2>
-      <p class="text-slate-600 text-base sm:text-lg leading-relaxed">De l'ardoise cassée à la réfection complète, une seule entreprise s'occupe de votre toit et de vos gouttières, en respectant le style de votre maison.</p>
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed">De l'ardoise cassée à la façade encrassée, une seule entreprise s'occupe de votre toit, de vos gouttières et de vos murs.</p>
     </div>
-    <!-- Photos : remplacer chaque bloc "ph" par <img class="w-full h-48 object-cover" loading="lazy" src="images/..." alt="..."/> -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <article class="bg-brand-light rounded-lg overflow-hidden border-t-4 border-brand-red flex flex-col">
-        <div class="ph ph-after w-full h-48"><i class="w-6 h-6" data-lucide="image"></i>Photo à venir</div>
+        <img alt="Couvreur RD Couverture sur une toiture en ardoise" class="w-full h-48 object-cover" loading="lazy" src="images/couverture.jpg"/>
         <div class="p-6">
-          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="house"></i>Rénovation de toiture</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Réfection complète de couverture, y compris sur les maisons anciennes, avec reprise de l'étanchéité.</p>
+          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="house"></i>Couverture</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Recherche et réparation de fuites, remplacement d'ardoises et de tuiles, réparation de cheminée, rénovation de toiture.</p>
         </div>
       </article>
       <article class="bg-brand-light rounded-lg overflow-hidden border-t-4 border-brand-red flex flex-col">
-        <div class="ph ph-after w-full h-48"><i class="w-6 h-6" data-lucide="image"></i>Photo à venir</div>
+        <img alt="Gouttière et descente en alu sur une maison" class="w-full h-48 object-cover" loading="lazy" src="images/zinguerie.jpg"/>
         <div class="p-6">
-          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="layers"></i>Ardoise et tuiles</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Pose et remplacement d'ardoises naturelles et de tuiles, couverture neuve ou en rénovation.</p>
+          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="droplets"></i>Zinguerie</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Gouttières en alu, PVC ou zinc, descentes, chéneaux et abergements : pose, remplacement et réparation.</p>
         </div>
       </article>
       <article class="bg-brand-light rounded-lg overflow-hidden border-t-4 border-brand-red flex flex-col">
-        <div class="ph ph-after w-full h-48"><i class="w-6 h-6" data-lucide="image"></i>Photo à venir</div>
+        <img alt="Démoussage d'une toiture en ardoise" class="w-full h-48 object-cover" loading="lazy" src="images/demoussage.jpg"/>
         <div class="p-6">
-          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="droplets"></i>Zinguerie et gouttières</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Gouttières en aluminium ou en zinc, descentes, chéneaux et abergements : pose, fixation et remplacement.</p>
+          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="sparkles"></i>Démoussage et hydrofuge</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Démoussage, traitement et peinture hydrofuge de vos tuiles et ardoises pour protéger durablement la toiture.</p>
         </div>
       </article>
       <article class="bg-brand-light rounded-lg overflow-hidden border-t-4 border-brand-red flex flex-col">
-        <div class="ph ph-after w-full h-48"><i class="w-6 h-6" data-lucide="image"></i>Photo à venir</div>
+        <img alt="Façade propre après nettoyage" class="w-full h-48 object-cover" loading="lazy" src="images/facade-apres.jpg"/>
         <div class="p-6">
-          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="wrench"></i>Réparation et fuites</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Recherche de fuite, tuiles ou ardoises déplacées, faîtage abîmé : on intervient rapidement pour remettre votre toit au sec.</p>
+          <h3 class="font-condensed text-xl font-bold text-brand-slate mb-2 flex items-center gap-2"><i class="w-5 h-5 text-brand-red" data-lucide="paint-roller"></i>Façade et peinture</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Nettoyage de façades et de pignons, peinture hydrofuge et rénovation des boiseries.</p>
         </div>
       </article>
     </div>
@@ -180,9 +173,10 @@
 <section class="py-16 md:py-24 bg-brand-light" id="devis">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="font-condensed text-3xl sm:text-4xl md:text-5xl font-bold text-brand-slate mb-6">Votre devis, <span class="text-brand-red">sans surprise</span></h2>
-    <p class="text-base sm:text-lg text-slate-700 leading-relaxed mb-6">Une fuite, des ardoises qui glissent, une toiture à refaire ? On vient voir sur place, on inspecte la toiture et vous recevez un chiffrage clair :</p>
+    <p class="text-base sm:text-lg text-slate-700 leading-relaxed mb-6">Une fuite, de la mousse sur le toit, une façade encrassée ? On vient voir sur place, on inspecte la toiture et vous recevez un chiffrage clair :</p>
     <ul class="space-y-3.5 mb-8 text-base text-slate-800">
       <li class="flex items-start gap-3"><span class="w-2.5 h-2.5 bg-brand-red mt-2 shrink-0"></span><span>Un rappel rapide pour caler la visite</span></li>
+      <li class="flex items-start gap-3"><span class="w-2.5 h-2.5 bg-brand-red mt-2 shrink-0"></span><span>Déplacement et devis gratuits</span></li>
       <li class="flex items-start gap-3"><span class="w-2.5 h-2.5 bg-brand-red mt-2 shrink-0"></span><span>Une inspection de la toiture sur place</span></li>
       <li class="flex items-start gap-3"><span class="w-2.5 h-2.5 bg-brand-red mt-2 shrink-0"></span><span>Un devis détaillé, poste par poste</span></li>
       <li class="flex items-start gap-3"><span class="w-2.5 h-2.5 bg-brand-red mt-2 shrink-0"></span><span>Nos attestations d'assurance jointes au devis</span></li>
@@ -192,9 +186,6 @@
 </section>
 
 <!-- ================= RÉALISATIONS (AVANT / APRÈS) ================= -->
-<!-- Pour mettre les vraies photos : dans chaque curseur, remplacer le bloc "ph-after" par
-     <img class="slider-img" loading="lazy" src="images/xxx-apres.jpg" alt="..."/>
-     et le bloc "ph-before" (dans slider-overlay) par <img class="slider-img" loading="lazy" src="images/xxx-avant.jpg" alt="..."/> -->
 <section class="bg-brand-slate py-16 md:py-24 text-white" id="realisations">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-3xl mx-auto mb-14">
@@ -206,69 +197,69 @@
         <div class="relative h-72 sm:h-80 w-full slider-container cursor-ew-resize">
           <span class="absolute top-3 left-3 z-20 bg-black/85 text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Avant</span>
           <span class="absolute top-3 right-3 z-20 bg-brand-red text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Après</span>
-          <div class="slider-img ph ph-after"></div>
-          <div class="slider-overlay"><div class="slider-img ph ph-before"></div></div>
+          <img alt="Façade propre après nettoyage" class="slider-img" loading="lazy" src="images/facade-apres.jpg"/>
+          <div class="slider-overlay"><img alt="Façade tachée avant nettoyage" class="slider-img" loading="lazy" src="images/facade-avant.jpg"/></div>
           <div class="slider-handle"><div class="slider-button"><i class="w-3.5 h-3.5" data-lucide="chevrons-left-right"></i></div></div>
         </div>
         <div class="p-4 text-center border-t border-slate-100 min-h-[72px] flex items-center justify-center">
-          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Toiture en ardoise naturelle</h3>
+          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Nettoyage de façade</h3>
         </div>
       </div>
       <div class="bg-white rounded-lg overflow-hidden shadow-xl flex flex-col">
         <div class="relative h-72 sm:h-80 w-full slider-container cursor-ew-resize">
           <span class="absolute top-3 left-3 z-20 bg-black/85 text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Avant</span>
           <span class="absolute top-3 right-3 z-20 bg-brand-red text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Après</span>
-          <div class="slider-img ph ph-after"></div>
-          <div class="slider-overlay"><div class="slider-img ph ph-before"></div></div>
+          <img alt="Toiture en tuiles propre après démoussage" class="slider-img" loading="lazy" src="images/tuiles-apres.jpg"/>
+          <div class="slider-overlay"><img alt="Toiture en tuiles noircie avant démoussage" class="slider-img" loading="lazy" src="images/tuiles-avant.jpg"/></div>
           <div class="slider-handle"><div class="slider-button"><i class="w-3.5 h-3.5" data-lucide="chevrons-left-right"></i></div></div>
         </div>
         <div class="p-4 text-center border-t border-slate-100 min-h-[72px] flex items-center justify-center">
-          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Rénovation d'une maison ancienne</h3>
+          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Démoussage de toiture en tuiles</h3>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-xl flex flex-col">
+        <div class="relative h-72 sm:h-80 w-full slider-container cursor-ew-resize">
+          <span class="absolute top-3 left-3 z-20 bg-black/85 text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Pendant</span>
+          <span class="absolute top-3 right-3 z-20 bg-brand-red text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Après</span>
+          <img alt="Ardoises traitées avec un hydrofuge coloré" class="slider-img" loading="lazy" src="images/ardoise-apres.jpg"/>
+          <div class="slider-overlay"><img alt="Démoussage d'une toiture en ardoise" class="slider-img" loading="lazy" src="images/ardoise-pendant.jpg"/></div>
+          <div class="slider-handle"><div class="slider-button"><i class="w-3.5 h-3.5" data-lucide="chevrons-left-right"></i></div></div>
+        </div>
+        <div class="p-4 text-center border-t border-slate-100 min-h-[72px] flex items-center justify-center">
+          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Démoussage et hydrofuge sur ardoise</h3>
         </div>
       </div>
       <div class="bg-white rounded-lg overflow-hidden shadow-xl flex flex-col">
         <div class="relative h-72 sm:h-80 w-full slider-container cursor-ew-resize">
           <span class="absolute top-3 left-3 z-20 bg-black/85 text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Avant</span>
           <span class="absolute top-3 right-3 z-20 bg-brand-red text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Après</span>
-          <div class="slider-img ph ph-after"></div>
-          <div class="slider-overlay"><div class="slider-img ph ph-before"></div></div>
+          <img alt="Pignon jaune propre après nettoyage" class="slider-img" loading="lazy" src="images/pignon-apres.jpg"/>
+          <div class="slider-overlay"><img alt="Pignon jaune taché avant nettoyage" class="slider-img" loading="lazy" src="images/pignon-avant.jpg"/></div>
           <div class="slider-handle"><div class="slider-button"><i class="w-3.5 h-3.5" data-lucide="chevrons-left-right"></i></div></div>
         </div>
         <div class="p-4 text-center border-t border-slate-100 min-h-[72px] flex items-center justify-center">
-          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Pose de gouttières</h3>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-xl flex flex-col">
-        <div class="relative h-72 sm:h-80 w-full slider-container cursor-ew-resize">
-          <span class="absolute top-3 left-3 z-20 bg-black/85 text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Avant</span>
-          <span class="absolute top-3 right-3 z-20 bg-brand-red text-white font-condensed text-xs tracking-wider px-2 py-0.5 rounded font-semibold">Après</span>
-          <div class="slider-img ph ph-after"></div>
-          <div class="slider-overlay"><div class="slider-img ph ph-before"></div></div>
-          <div class="slider-handle"><div class="slider-button"><i class="w-3.5 h-3.5" data-lucide="chevrons-left-right"></i></div></div>
-        </div>
-        <div class="p-4 text-center border-t border-slate-100 min-h-[72px] flex items-center justify-center">
-          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Réparation de toiture</h3>
+          <h3 class="font-condensed font-bold text-brand-slate text-lg leading-tight">Nettoyage de pignon</h3>
         </div>
       </div>
     </div>
 
     <h3 class="font-condensed text-2xl sm:text-3xl font-bold mb-6">Sur nos chantiers</h3>
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-      <figure class="relative overflow-hidden rounded-lg">
-        <div class="ph ph-after w-full aspect-[4/3]"><i class="w-6 h-6" data-lucide="image"></i></div>
-        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Couverture en ardoise</figcaption>
+      <figure class="relative overflow-hidden rounded-lg group ">
+        <img alt="Toiture en ardoise" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/toiture-ardoise.jpg"/>
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Toiture en ardoise</figcaption>
       </figure>
-      <figure class="relative overflow-hidden rounded-lg">
-        <div class="ph ph-after w-full aspect-[4/3]"><i class="w-6 h-6" data-lucide="image"></i></div>
-        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Pose de tuiles</figcaption>
+      <figure class="relative overflow-hidden rounded-lg group ">
+        <img alt="Notre utilitaire sur chantier" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/camion-chantier.jpg"/>
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Notre utilitaire sur chantier</figcaption>
       </figure>
-      <figure class="relative overflow-hidden rounded-lg">
-        <div class="ph ph-after w-full aspect-[4/3]"><i class="w-6 h-6" data-lucide="image"></i></div>
-        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Zinguerie</figcaption>
+      <figure class="relative overflow-hidden rounded-lg group ">
+        <img alt="Hydrofuge coloré sur ardoise" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/hydrofuge-ardoise.jpg"/>
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Hydrofuge coloré sur ardoise</figcaption>
       </figure>
-      <figure class="relative overflow-hidden rounded-lg">
-        <div class="ph ph-after w-full aspect-[4/3]"><i class="w-6 h-6" data-lucide="image"></i></div>
-        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Chantier en cours</figcaption>
+      <figure class="relative overflow-hidden rounded-lg group ">
+        <img alt="Démoussage à l'échelle" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/demoussage.jpg"/>
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent text-white text-sm font-medium px-4 pt-8 pb-3">Démoussage à l'échelle</figcaption>
       </figure>
     </div>
     <div class="flex justify-center">
@@ -281,8 +272,7 @@
 <section class="py-16 md:py-24 bg-white" id="garantie">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-8 items-stretch">
     <figure class="md:col-span-2 relative rounded-lg overflow-hidden shadow-lg min-h-[340px]">
-      <!-- Remplacer ce bloc par <img class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="images/equipe.jpg" alt="L'équipe RD Couverture"/> -->
-      <div class="ph ph-after absolute inset-0 w-full h-full"><i class="w-8 h-8" data-lucide="users"></i>Photo de l'équipe</div>
+      <img alt="L'équipe RD Couverture sur un chantier de toiture et de peinture" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="images/equipe.jpg"/>
       <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent text-white px-5 pt-10 pb-4">
         <span class="font-condensed text-xl font-bold block">Une entreprise familiale</span>
         <span class="text-sm text-white/85">Basée à Saint-Gilles, à côté de Saint-Lô</span>
@@ -331,17 +321,8 @@
 <!-- ================= PIED DE PAGE ================= -->
 <footer class="bg-brand-slateDark text-white pt-16 pb-8" id="contact">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-    <div class="flex items-center gap-3 mb-6">
-      <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <rect width="48" height="48" rx="6" fill="#fff"/>
-        <path d="M7 26 L24 11 L41 26" stroke="#D62828" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13 25 V37 H35 V25" stroke="#26313D" stroke-width="3.5" stroke-linejoin="round"/>
-        <rect x="31" y="12" width="5" height="9" fill="#26313D"/>
-      </svg>
-      <span class="flex flex-col leading-none text-left">
-        <span class="font-condensed text-2xl font-bold">RD</span>
-        <span class="font-condensed text-xs font-bold text-red-400 tracking-[0.3em] mt-0.5">Couverture</span>
-      </span>
+    <div class="logo-card mb-6">
+      <img alt="RD Couverture" class="logo-img" height="56" width="132" src="images/logo-rd-couverture.svg"/>
     </div>
     <h2 class="font-condensed text-3xl sm:text-4xl md:text-5xl font-bold mb-8">Un toit sain, une maison au sec</h2>
     <div class="flex flex-wrap items-center justify-center gap-4 mb-10 w-full sm:w-auto">
@@ -353,7 +334,8 @@
     <p class="text-slate-300 text-sm font-medium mb-1" id="zones">Zone d'intervention</p>
     <p class="text-slate-200 text-sm mb-6 max-w-2xl">Saint-Lô, Saint-Gilles, Agneaux, Saint-Georges-Montcocq, Canisy, Marigny-le-Lozon, Pont-Hébert, Condé-sur-Vire, Torigny-les-Villes et tous les alentours de Saint-Lô</p>
     <div class="text-slate-400 text-xs sm:text-sm flex flex-wrap items-center justify-center gap-2 mb-12">
-      <span>34 La Bijude, 50180 Saint-Gilles</span>
+      <a class="hover:underline" href="mailto:rdcouverture.contact@gmail.com">rdcouverture.contact@gmail.com</a>
+      <span>·</span><span>34 La Bijude, 50180 Saint-Gilles</span>
       <span>·</span><a class="hover:underline" href="#realisations">Réalisations</a>
       <span>·</span><a class="hover:underline" href="#">Mentions légales</a>
       <span>·</span><a class="hover:underline" href="confidentialite.html">Confidentialité</a>
@@ -361,7 +343,7 @@
     </div>
   </div>
   <div class="border-t border-white/10 pt-6">
-    <p class="text-center font-condensed text-xs sm:text-sm tracking-wider text-slate-500">RD Couverture 2026 · Saint-Gilles (50180)</p>
+    <p class="text-center font-condensed text-xs sm:text-sm tracking-wider text-slate-500">RD Couverture 2026 · Saint-Gilles (50180) · SIREN 814 487 716</p>
   </div>
 </footer>
 
@@ -390,8 +372,10 @@
             <div class="grid grid-cols-2 gap-px bg-slate-300 border border-slate-300">
               <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Réparation / fuite" type="button">Réparation / fuite</button>
               <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Rénovation de toiture" type="button">Rénovation</button>
-              <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Ardoise / tuiles" type="button">Ardoise / tuiles</button>
+              <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Démoussage / hydrofuge" type="button">Démoussage</button>
               <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Zinguerie / gouttières" type="button">Zinguerie</button>
+              <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Façade / peinture" type="button">Façade / peinture</button>
+              <button aria-pressed="false" class="devis-opt" data-group="travaux" data-value="Autre" type="button">Autre</button>
             </div>
           </fieldset>
           <button class="devis-btn w-full py-4 text-lg font-semibold text-white bg-slate-400 cursor-not-allowed transition-colors" disabled id="devis-next" type="button">Suivant</button>
@@ -426,7 +410,7 @@
       </form>
     </div>
     <p class="mt-5 text-center text-sm font-medium leading-relaxed text-white">
-      En envoyant ce formulaire, vous acceptez d'être recontacté par téléphone, par SMS ou par email au sujet de votre projet. Vos données ne sont ni revendues ni transmises à des tiers à des fins commerciales, et vous pouvez demander leur suppression à tout moment. <a class="underline hover:text-red-200" href="confidentialite.html">Politique de confidentialité</a>.
+      En envoyant ce formulaire, vous acceptez d'être recontacté par téléphone, par SMS ou par email au sujet de votre projet. Vos données ne sont ni revendues ni transmises à des tiers à des fins commerciales, et vous pouvez demander leur suppression à tout moment. <a class="underline hover:text-brand-light" href="confidentialite.html">Politique de confidentialité</a>.
     </p>
   </div>
 </div>

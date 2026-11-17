@@ -8,7 +8,6 @@ Organisation : le dossier site-web contient la page (index.html), les styles (cs
 
 ## À compléter
 
-- Photos : les emplacements gris marqués « Photo à venir », « Photo avant / après » sont à remplacer par les vraies photos (voir les commentaires dans index.html).
-- Formulaire de devis : renseigner `WEB3FORMS_KEY` dans index.html avec une clé Web3Forms liée à l'email de RD Couverture.
+- Formulaire de devis : renseigner `WEB3FORMS_KEY` dans site-web/index.html avec une clé Web3Forms créée pour rdcouverture.contact@gmail.com.
 - Pixel Meta (facultatif) : renseigner `PIXEL_ID`. Tant qu'il est vide, aucun pixel ni bandeau cookies n'est affiché.
-- Email de contact à ajouter dans confidentialite.html et le pied de page.
+- Le logo (images/logo-rd-couverture.svg) est redessiné d'après le marquage du véhicule ; à remplacer par le fichier d'origine si le client l'a.
